@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Content-Type" content="UTF-8">
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,22 +17,12 @@
 
 <body>
     <header>
-
+        <h1>Templates presentation</h1>
     </header>
     <main>
-        <iframe src="https://github.toidicode.com/104-sass-landing-page/"></iframe>
-        <section id="move">
-            <img src="https://nothingelse.fr/img/Logo_NothingElse_text.png">
-            <p>Templates</p>
-            <div>
-                <button><</button>
-                <button>></button>
+        <section>
+            <div id="websites_preview" class="grid grid-3">
             </div>
-            <p>
-                <span> 0 </span>
-                /
-                <span> 0 </span>
-            </p>
         </section>
     </main>
     <footer>
