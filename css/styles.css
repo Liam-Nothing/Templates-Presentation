@@ -1,8 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Playfair+Display:wght@600&family=Raleway:wght@100;200;300;400&display=swap');
+
 /* To disable blank at the to of the page */
 
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*********************************************************************************/
+
+/* https://stackoverflow.com/questions/3982422/full-screen-iframe#answer-27832759 */
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: rgb(255, 255, 255);
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+/*********************************************************************************/
+
+#move {
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    border-radius: 0px 35px 0px 35px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+#move img {
+    width: 120px;
+    filter: invert(1);
+    padding: 10px;
+}
+
+#move div button {
+    width: 45%;
+    height: 30px;
+    margin-bottom: 8px;
+    border-radius: 50rem !important;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background-color: white;
+}
+
+#move p {
+    color: white;
+    margin-bottom: 8px;
+}
