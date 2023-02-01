@@ -26,7 +26,7 @@
         </section>
     </main>
     <footer>
-
+        <p>Thanks for <a href="https://github.com/toidicode/template">Toidicode</a>'s work ❤️</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
