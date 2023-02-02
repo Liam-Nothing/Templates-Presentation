@@ -21,7 +21,10 @@ function addAttribute() {
     for (const [key, value] of Object.entries(div_templates)) {
 
         value.addEventListener('mouseover',function(){
-            value.style="object-position: 0 -" + (value.clientHeight - 150) + "px";
+            value.style=`
+            object-position: 0 -${(value.clientHeight - 150)}px;
+            transition: ${(value.clientHeight - 150)/150}s;
+            `;
         })
 
         value.addEventListener('mouseleave',function(){
