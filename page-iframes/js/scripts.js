@@ -106,15 +106,22 @@ var website_list = [
 ]
 
 var actual_website = 0;
+var GET_id = getAllUrlParams(window.location.search).id;
 
-if(getAllUrlParams(window.location.search).id <= website_list.length - 1) {
-    actual_website = getAllUrlParams(window.location.search).id;
+if((GET_id <= website_list.length - 1) && (GET_id >= 0)) {
+    actual_website = GET_id;
 }
+
+window.location.replace(website_list[actual_website]);
+
+/* ERROR (mixed content)
 
 document.getElementById("backward").addEventListener("click", backward);
 document.getElementById("forward").addEventListener("click", forward);
 
 render_website(actual_website);
+
+*/
 
 function backward() {
     if (actual_website - 1 >= 0) {
