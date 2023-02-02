@@ -397,3 +397,12 @@ header h1 {
 button {
     cursor: pointer;
 }
+
+header {
+    text-align: center;
+}
+
+.github-logo {
+    /* width: 30px; */
+    height: 20px;
+}
