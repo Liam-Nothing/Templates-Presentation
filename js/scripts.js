@@ -1,7 +1,7 @@
 var websites_preview = document.getElementById("websites_preview")
 var websites_preview_html = "";
 
-for (let i = 0; i < 82; i++) {
+for (let i = 0; i < 83; i++) {
     websites_preview_html += `
     <div>
         <img src="img/${i}.png" class="templates">
